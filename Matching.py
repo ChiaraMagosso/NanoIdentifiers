@@ -16,15 +16,15 @@
 
 """ 
 The input should be two set of already binarized images contained in the folders
-ref_folder and cfr_folder, defined a few lines below (change those accordingly)
+`ref_folder` and `cfr_folder`, defined a few lines below (change those accordingly)
 
 The algorithm goes as follows: for each image pair (img1, img2) we want to compare,
 we use the SIFT algorithm to identify keypoints in both images,
 then we run a matcher to find the matching keypoints in both images,
 then using those we build a transformation matrix to find the best mapping of one image on 
 top of the other using the cv.findHomography() [should account for translations, rotations
-and deformations],
-we now map one image on top of the other, and check the overlap between the two, 
+and deformations].
+We then map one image on top of the other, and check the overlap between the two, 
 using the function mse() (which uses np.logical_xor() to do the overlap).
 
 It returns the resulting correlation matrices as txt: 'corr_mat_overlap.txt'
@@ -47,12 +47,12 @@ def check_binary_image(img, range_type):
     else:
         raise ValueError("Invalid range type. Please choose '0-255' or '0-1'.")
     if np.any(condition):
-        print('Attenzione: immagine non binaria!')
+        print('Warning:  non-binary image!')
         sys.exit()
 
 def mse(img1,name_img1, img2,name_img2):
     if img1.shape != img2.shape: 
-        print('Diverse dimensioni')
+        print("Warning: Images have different shapes!")
         sys.exit()
     logica = np.logical_xor(img2, img1)
     diff =  logica.astype(int)
@@ -75,7 +75,7 @@ def mse(img1,name_img1, img2,name_img2):
     if HD_XOR == err:
         pass
     else: 
-        print('HD non corrisponde a XOR') 
+        print('HD does not correspond to XOR') 
         sys.exit()
     mse = err  
     return mse
@@ -184,7 +184,7 @@ for ii, ref_image in enumerate(set_1):
             img2 = cv.imread(cfr_folder + cfr_image, cv.IMREAD_GRAYSCALE) # queryIma
             check_binary_image(img2, range_type='0-255')
             n_good_matches = calc_mse(img1,ref_image, img2, cfr_image)
-            print('Compering : ',ref_image,'with : ', cfr_image, ', HD : ',n_good_matches)
+            print('Comparing : ',ref_image,'with : ', cfr_image, ', HD : ',n_good_matches)
             matrix_matches[ii,jj] = n_good_matches
 
 for ii in range(matrix_matches.shape[0]):
