@@ -1,4 +1,4 @@
-# BCP_PUF
+# NanoIdentifiers
 
 This repository is part of the work "Artificial fingerprints engraved through block-copolymers as nanoscale physical unclonable functions for authentication and identification" by 
 Irdi Murataj, Chiara Magosso, Stefano Carignano, Matteo Fretto, Federico Ferrarese Lupi, and Gianluca Milano submitted for publication (https://doi.org/10.21203/rs.3.rs-4170364/v1).
