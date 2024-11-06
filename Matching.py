@@ -153,6 +153,7 @@ def calc_mse(img1,name_img1, img2, name_img2):
 
 ref_folder = 'Matching_data/ref/' 
 cfr_folder = 'Matching_data/crf/'
+os.makedirs(os.path.join('Matching_data/', 'comparison'), exist_ok=True)
 output='Matching_data/comparison/'
 
 set_1 = os.listdir(ref_folder)
@@ -195,4 +196,4 @@ np.savetxt(f'{output}corr_mat_overlap.txt', matrix_matches)
 plt.imshow(matrix_matches)
 plt.colorbar()
 plt.savefig(f'{output}match_matrix.png')
-plt.clf()
+plt.clf() 
