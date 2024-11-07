@@ -4,7 +4,7 @@ This repository is part of the work "Artificial fingerprints engraved through bl
 Irdi Murataj, Chiara Magosso, Stefano Carignano, Matteo Fretto, Federico Ferrarese Lupi, and Gianluca Milano submitted for publication (https://doi.org/10.21203/rs.3.rs-4170364/v1).
 
 The repository contains 2 files and 2 folders:
-- The file named 'QR-Code.py' allows you to generate QR-codes from a binarized SEM image end the relative defect_coordinates file. The file can be run locally.
+- The file named 'QR-Code.py' allows you to generate QR-codes from a binarized SEM image and the relative defect_coordinates file. The file can be run locally.
 - The file named 'Matching.py' allows you to match a couple of binarized SEM images. The file can be run locally.
 - The folder named 'QR-Code_data' are test data and analysis result for the QR-Cede script.
 - The folder named 'Matching_data' are test data and analysis result for the Matching script.

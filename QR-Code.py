@@ -116,7 +116,8 @@ for root, dirs, files in os.walk(indirizzo_FP):
             plt.savefig(f'{cartella_puf}{cartella}_difetti_cut_una_fase.png')
             plt.clf()
 
-            df.to_excel(f'{cartella_puf}{cartella}_difetti_cut_una_fase.xlsx') 
+            df.to_csv(f'{cartella_puf}{cartella}_difetti_cut_una_fase.csv', sep=';')
+
             print(f'image : {cartella} , dimensions : ', im_crop_final.shape )
             
             bins = 10
