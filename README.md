@@ -1,7 +1,6 @@
 # NanoIdentifiers
 
-This repository contains codes of the work "Artificial fingerprints engraved through block-copolymers as nanoscale physical unclonable functions for authentication and identification" by 
-Irdi Murataj, Chiara Magosso, Stefano Carignano, Matteo Fretto, Federico Ferrarese Lupi, and Gianluca Milano, Nature Communications (2024), DOI : 10.1038/s41467-024-54492-8
+This repository contains codes of the work "Artificial fingerprints engraved through block-copolymers as nanoscale physical unclonable functions for authentication and identification" by Irdi Murataj, Chiara Magosso, Stefano Carignano, Matteo Fretto, Federico Ferrarese Lupi, and Gianluca Milano, Nature Communications (2024), DOI: 10.1038/s41467-024-54492-8
 
 The repository contains 2 files and 2 folders:
 - The file named 'QR-Code.py' allows you to generate QR-codes from a binarized SEM image and the relative defect_coordinates file. The file can be run locally.

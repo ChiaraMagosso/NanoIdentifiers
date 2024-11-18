@@ -4,13 +4,12 @@
 ## 
 ## This work is licensed under a  
 ## 
-## Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-## ( http://creativecommons.org/licenses/by-nc-sa/4.0/ )
+## Creative Commons Attribution 4.0 International License
+## ( https://creativecommons.org/licenses/by/4.0/ )
 ## 
 ## Please contact chiara.magosso@polito.it for information.
 ##
-## This code is associated with the following work : https://doi.org/10.21203/rs.3.rs-4170364/v1
-##
+## This code is associated with the following work - DOI: 10.1038/s41467-024-54492-8 
 
 import skimage.color
 import skimage.io
