@@ -1,4 +1,4 @@
-# NanoIdentifiers
+# NanoIdentifiers  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14179662.svg)](https://doi.org/10.5281/zenodo.14179662)
 
 This repository contains codes of the work "Artificial fingerprints engraved through block-copolymers as nanoscale physical unclonable functions for authentication and identification" by Irdi Murataj, Chiara Magosso, Stefano Carignano, Matteo Fretto, Federico Ferrarese Lupi, and Gianluca Milano, Nature Communications (2024), DOI: 10.1038/s41467-024-54492-8
 
