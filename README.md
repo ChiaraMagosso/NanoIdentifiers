@@ -8,7 +8,7 @@ The repository contains 2 files and 2 folders:
 - The folder named 'QR-Code_data' are test data and analysis result for the QR-Cede script.
 - The folder named 'Matching_data' are test data and analysis result for the Matching script.
 
-Before running the python files locally make sure you have installed the list of libraries with version reported in the 'requirements.txt' file.
+Before running the Python files locally, make sure you have installed all the libraries listed in the 'requirements.txt' file with their specified versions. The code was developed and tested using Python 3.8.7.
 To run the files correctly on your data, change the path according to where the files are located on your pc. The scripts are written for running on the relative path of data provided in the example.
 
 The script 'sem_image_automated_preprocessing_for_ADAblok.py' to analyze and binarize SEM images is provided at the following GitHub repository: https://github.com/ChiaraMagosso/BlockMetrology. 
